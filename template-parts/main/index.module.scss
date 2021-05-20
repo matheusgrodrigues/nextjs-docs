@@ -2,6 +2,8 @@ $layout: "lMain";
 
 .#{$layout} {
   width: 940px;
+  min-height: 20vh;
   margin: 0 auto;
-  background-color: lawngreen;
+  background-color: var(--light);
+  padding: var(--espacamento_extra-medio) var(--espacamento_medio);
 }
