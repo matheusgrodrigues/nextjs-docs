@@ -6,9 +6,10 @@
 
 body {
   height: 100%;
-  font-size: $normal;
+  font-size: var(--normal);
+  background-color: var(--branco);
 }
 
-.container {
-  @include centralizar;
+a {
+  text-decoration: none;
 }
