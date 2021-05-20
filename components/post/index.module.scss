@@ -1,0 +1,23 @@
+@import "@/sass/global/mixin.scss";
+
+$component: "c_post";
+
+.#{$component} {
+  width: 540px;
+  height: auto;
+  background-color: var(--light);
+  @include centralizar;
+
+  // Title
+  &__title {
+    color: var(--info);
+    font-size: var(--grande);
+  }
+
+  // Description
+  &__description {
+    font-size: var(--normal);
+    line-height: lineHeight(16);
+    margin-top: var(--espacamento_pequeno);
+  }
+}

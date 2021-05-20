@@ -1,0 +1,33 @@
+@import "@/sass/global/mixin.scss";
+
+$component: "tp_menu";
+
+.#{$component} {
+  width: 100%;
+  max-width: 940px;
+  @include centralizar;
+  color: var(--branco);
+
+  // List
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    & li {
+      &:not(:nth-last-child(1)) {
+        margin-right: var(--normal);
+      }
+
+      & a {
+        color: var(--branco);
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--cinza);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

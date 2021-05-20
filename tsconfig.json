@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+  "@/sass/global/*": ["sass/global/*"]
+  },
     "target": "es5",
     "lib": [
       "dom",
