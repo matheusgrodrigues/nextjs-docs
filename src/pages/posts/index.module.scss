@@ -1,0 +1,7 @@
+$layout: "l_posts";
+
+.#{$layout} {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacamento_medio);
+}

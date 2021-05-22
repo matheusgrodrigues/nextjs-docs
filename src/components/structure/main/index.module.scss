@@ -1,9 +1,12 @@
+@import "src/styles/util/mixin/mixin";
+
 $layout: "lMain";
 
 .#{$layout} {
-  width: 940px;
-  min-height: 20vh;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
+  @include centralizar;
   background-color: var(--light);
   padding: var(--espacamento_extra-medio) var(--espacamento_medio);
+  padding-bottom: var(--espacamento_gigante);
 }
