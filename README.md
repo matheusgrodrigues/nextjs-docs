@@ -16,6 +16,9 @@
   - [Quando usar geração estática x renderização do lado do servidor](#quando-usar-geracao-estatica-x-renderizacao-do-lado-do-servidor)
   - [Geração estatica com getStaticProps](#geracao-estatica-com-getstaticprops)
 - [Rotas dinâmicas](#rotas-dinamicas)
+  - [Criando rotas dinâmicas](#criando-rotas-dinamicas)
+  - [Fallbacks de erro 404](#fallbacks-de-erros)
+- [Rotas API](#rotas-api)
 - [Typescript](#typescript)
 
 ## Sobre
@@ -141,6 +144,43 @@ Em Next.js, quando você exporta um componente de página, você também pode ex
 - Dentro da função, você pode buscar os dados externos e enviá-los como adereços para a página.
 
 Essencialmente, o `getStaticProps` permite que você diga ao Next.js: "Ei, está pagina tem algumas dependências de dados - então, quando você pré-renderizar esta página no tempo de compilação, certifique-se de resolvê-los primeiro!".
+
+## Rotas dinamicas
+
+Next.js, permite gerar páginas estaticamente com caminhos que dependem de dados externos. Com as rotas dinâmicas, o Next.js gera automaticamente links para uma postagem específica por ex: /post/1 ou /post/bolo-de-chocolate.
+
+### Criando rotas dinamicas
+
+Primeiro, deveremos criar uma página chamada `[id].js` sob `pages/posts`. Páginas que começam com `[` e terminam com `]` são rotas dinâmicas em Next.js.
+
+Dentro de `pages/posts/[id.js]`, escreveremos o código que rendenizará uma página de postagem ou outras páginas que criarmos.
+
+![Resumo rotas dinâmicas](https://nextjs.org/static/images/learn/dynamic-routes/how-to-dynamic-routes.png)
+
+### Fallbacks de erros
+
+O next.js utiliza o arquivo /pages/404.js para mostrar mensagens de erro 404.
+
+Existem diversas configurações de 'fallbacks' que disparam a mensagem de erro 404 de diversas maneiras, olhe na documentação do Next.js na seção de 'fallbacks'.
+
+
+## Rotas API
+
+Next.js tem suporte para API Routes, que permite criar facilmente um endpoint de API como uma função sem servidor Node.js. 
+
+### Criando uma rota de api simples
+
+Para criar uma rota de api simples, crie um arquivo em pages/api/index.js e escreva o seguinte código:
+
+`export default function handler(req, res) {
+  res.status(200).json({ text: 'Hello' })
+}`
+
+Agora basta acessar /api/hello que irá retornar a resposta em um json.
+
+## Deploy na versel
+
+Como o Next.js foi desenvolvido pela Versel, é recomendado hospedar aplicações com eles, para obter diversos benefícios de performance.
 
 ## Typescript 
 
