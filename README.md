@@ -2,14 +2,15 @@
 
 - [Sobre](#sobre)
 - [Configurar](#configurar)
-- [Criar um novo projeto](#criar-um-novo-projeto)
-- [Iniciando o servidor](#iniciando-o-servidor)
+  - [Criar um novo projeto](#criar-um-novo-projeto)
+  - [Iniciando o servidor](#iniciando-o-servidor)
 - [Criar paginas](#criar-paginas)
 - [Links](#links)
 - [Imagens](#imagens)
 - [Head](#head)
 - [Css](#css)
 - [Sass](#sass)
+- [Pré-renderização e busca de dados](#pre-renderizacao-e-busca-de-dados)
 - [Typescript](#typescript)
 
 ## Sobre
@@ -92,13 +93,41 @@ Caso queira alterar o \<html> tag, para mudar o 'lang' por exemplo, é necessár
 
 O Next.js possui suporte nativo a css, sass, ele utiliza o conceito de CSS-in-JS, que é o css dentro de components JSX.
 
-### SASS
+## SASS
 
 O Next.js permite que import Sass usando '.scss e '.sass' extensão, mas antes deverá instalar o suporte ao sass com o seguinte comando:
 
 > npm install sass
 
-### Typescript 
+## Pre renderizacao e busca de dados
+
+### Pre renderizacao
+
+Por padrão, o Next.js gera o HTML para cada página com antecedência, esse html gerado, é associado ao código javascript mínimo necessário para essa página. Quando uma página é carregada pelo navegador, seu código JavaScript é executado e torna a página totalmente interativa. (Esse processo é chamado de **hidrataçao**).
+
+Com esse recurso, o next.js permite que o seu aplicativo seja renderizado sem JavaScript. Permitindo que você veja a interface do usuário sem executar o JavaScript, isso pode resultar em melhor desempenho de SEO.
+
+### Formas de pre renderizacao
+
+#### Geração estatica
+
+É o método de pré renderização, que gera o HTML no momento da construção. O HTML pré renderizado é então **reutilizado em cada soliticação**.
+
+#### Renderizacao do lado do servidor
+É o método de pré renderização que gera o HTML em **cada solicitação**.
+
+#### Quando usar geracao estatica x renderizacao do lado do servidor
+
+- **Geração estática**
+- Páginas de marketing
+- Postagens no blog
+- Listagens de produtos de comércio eletrônico
+- Ajuda e documentação
+
+- **Renderizacao do lado do servidor**
+- Quando precisamos que os dados estejam sempre atualizados
+
+## Typescript 
 
 O Next.js possui suporte integrado a Typescript, para utilizar é necessário algumas configurações, vamos lá !
 
