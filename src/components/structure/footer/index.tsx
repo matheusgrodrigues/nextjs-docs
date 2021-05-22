@@ -1,10 +1,10 @@
 import styles from "./index.module.scss";
 
-interface FooterProps {
+interface IFooter {
   children?: any;
 }
 
-export default function Footer({ children }: FooterProps) {
+export default function Footer({ children }: IFooter) {
   return (
     <footer className={styles.lFooter}>
       {children ? (

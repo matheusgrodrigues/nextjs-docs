@@ -4,11 +4,11 @@ import Menu from "./components/menu";
 
 import styles from "./index.module.scss";
 
-interface HeaderProps {
+interface IHeader {
   children?: any;
 }
 
-export default function Header({ children }: HeaderProps) {
+export default function Header({ children }: IHeader) {
   return (
     <header className={styles.lHeader}>
       <Menu>
