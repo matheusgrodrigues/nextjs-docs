@@ -1,8 +1,8 @@
-# Leitura da documentação do NextJS
+# Leitura da documentação do Next.js
 
 ## Sobre
 
-**Nextjs** é um framework da biblioteca ReactJS, a ideia por traz dele é facilitar o desenvolvimento de aplicativos que utilizam React. O Nextjs fornece uma estrutura organizada de arquivos, pastas e configurações para facilitar o desenvolvimento de novos projetos, e facilitar o trabalho em equipe.
+**Next.js** é um framework da biblioteca ReactJS, a ideia por traz dele é facilitar o desenvolvimento de aplicativos que utilizam React. O Nextjs fornece uma estrutura organizada de arquivos, pastas e configurações para facilitar o desenvolvimento de novos projetos, e facilitar o trabalho em equipe.
 
 O Nextjs fornece configurações pré estabelecidadas, algumas delas são:
 
