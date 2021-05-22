@@ -127,6 +127,13 @@ Com esse recurso, o next.js permite que o seu aplicativo seja renderizado sem Ja
 - **Renderizacao do lado do servidor**
 - Quando precisamos que os dados estejam sempre atualizados
 
+### Geracao estatica com getStaticProps
+
+Em Next.js, quando você exporta um componente de página, você também pode exportar um `async` funcção chamada `getStaticProps`. Ao fazer isso, então:
+
+- `getStaticProps` é executado em tempo de construção na produção
+- Dentro da função, você pode buscar os dados externos e enviá-los como adereços para a página.
+
 ## Typescript 
 
 O Next.js possui suporte integrado a Typescript, para utilizar é necessário algumas configurações, vamos lá !
