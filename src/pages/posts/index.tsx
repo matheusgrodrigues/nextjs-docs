@@ -5,31 +5,31 @@ import Post from "src/components/structure/main/post";
 
 import styles from "./index.module.scss";
 
-export default function Posts() {
+import { getSortedPostsData } from "src/markdown";
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Posts({ allPostsData }) {
   return (
     <>
       <Header />
       <Main classe={styles.l_posts}>
-        <Post title="Primeiro Post">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil
-          adipisci eligendi ea voluptatum! Doloremque nemo ab, fugit consectetur
-          totam impedit esse corporis ea itaque, voluptatibus, dolorem tempore
-          libero perferendis?
-        </Post>
-        <Post title="Segundo Post">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil
-          adipisci eligendi ea voluptatum! Doloremque nemo ab, fugit consectetur
-          totam impedit esse corporis ea itaque, voluptatibus, dolorem tempore
-          libero perferendis?
-        </Post>
-        <Post title="Terceiro Post">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil
-          adipisci eligendi ea voluptatum! Doloremque nemo ab, fugit consectetur
-          totam impedit esse corporis ea itaque, voluptatibus, dolorem tempore
-          libero perferendis?
-        </Post>
+        {allPostsData.map(({ id, title, date, desc }) => {
+          return (
+            <Post title={`${date} - ${title}`} key={id}>
+              {desc}
+            </Post>
+          );
+        })}
       </Main>
-
       <Footer />
     </>
   );
