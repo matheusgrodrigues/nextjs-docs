@@ -1,4 +1,4 @@
-import Post from "components/post";
+import Post from "src/components/structure/main/post";
 
 export default function Posts() {
   return (

@@ -3,14 +3,14 @@ import Link from "next/link";
 
 import styles from "./index.module.scss";
 
-// Template parts
-import Header from "../template-parts/header";
-import Menu from "../template-parts/header/components/menu";
-import Main from "../template-parts/main";
-import Footer from "../template-parts/footer";
+// Componentes estruturais
+import Header from "../components/structure/header";
+import Menu from "../components/structure/header/components/menu";
+import Main from "../components/structure/main";
+import Footer from "../components/structure/footer";
 
 // Paginas
-import Welcome from "pages/welcome";
+import Welcome from "src/pages/welcome";
 
 export default function Home() {
   return (

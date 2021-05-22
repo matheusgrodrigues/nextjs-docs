@@ -8,8 +8,8 @@ O Nextjs fornece configurações pré estabelecidadas, algumas delas são:
 
 - Sistema de roteamento dinâmico (baseado em páginas)
 - Pré rendenização
-- Divisão de código automatico para carregamento de página mas rápido
-- Roteamento do lado do cliente com pré busc otimizada
+- Divisão de código automatico para carregamento de página mais rápido
+- Roteamento do lado do cliente com pré busca otimizada
 - Css e Suporte a Sass integrado e suporte para qualquer biblioteca CSS-in-JS
 - Ambiente de desenvolvimento com Fast Refresh
 - Rotas de API para construir endpoints de API com funções sem servidor
