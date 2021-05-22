@@ -16,6 +16,7 @@
   - [Quando usar geração estática x renderização do lado do servidor](#quando-usar-geracao-estatica-x-renderizacao-do-lado-do-servidor)
   - [Geração estatica com getStaticProps](#geracao-estatica-com-getstaticprops)
 - [Rotas dinâmicas](#rotas-dinamicas)
+  - [Criando rotas dinâmicas](#criando-rotas-dinamicas)
 - [Typescript](#typescript)
 
 ## Sobre
