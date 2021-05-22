@@ -5,6 +5,7 @@ $layout: "lMain";
 .#{$layout} {
   width: 100%;
   max-width: 940px;
+  min-height: calc(100vh - 64px);
   @include centralizar;
   background-color: var(--light);
   padding: var(--espacamento_extra-medio) var(--espacamento_medio);

@@ -13,6 +13,7 @@ $component: "c_post";
   &__title {
     color: var(--info);
     font-size: var(--grande);
+    font-weight: var(--regular);
   }
 
   // Description
@@ -20,5 +21,7 @@ $component: "c_post";
     font-size: var(--normal);
     line-height: lineHeight(16);
     margin-top: var(--espacamento_pequeno);
+    font-family: var(--roboto);
+    font-weight: var(--light);
   }
 }
