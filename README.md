@@ -1,8 +1,6 @@
-# Leitura da documentação do Next.js
 
-![Pontuação final](readme/pontuacao.png)
 
----
+# Leitura da documentação do [Next.js](https://nextjs.org/)
 
 ## Sumário
 
@@ -26,6 +24,7 @@
   - [Fallbacks de erro 404](#fallbacks-de-erros)
 - [Rotas API](#rotas-api)
 - [Typescript](#typescript)
+- [Conclusão](#conclusao)
 
 ## Sobre
 
@@ -196,3 +195,7 @@ O Next.js possui suporte integrado a Typescript, para utilizar é necessário al
 - Instalar a biblioteca para rodar o typescript
 - > npm install --save-dev typescript @types/react
 - Criar o arquivo 'next-env.d.ts, que garante que os tipos Next.js sejam lidos pelo compilador do Typescript, **Não alterar este arquivo**
+
+## Conclusao
+
+![Pontuação final](readme/pontuacao.png)
