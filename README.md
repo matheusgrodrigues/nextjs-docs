@@ -153,6 +153,13 @@ Primeiro, deveremos criar uma página chamada `[id].js` sob `pages/posts`. Pági
 
 Dentro de `pages/posts/[id.js]`, escreveremos o código que rendenizará uma página de postagem ou outras páginas que criarmos.
 
+![Resumo rotas dinâmicas](https://nextjs.org/static/images/learn/dynamic-routes/how-to-dynamic-routes.png)
+
+### Fallbacks de erros
+
+O next.js utiliza o arquivo /pages/404.js para mostrar mensagens de erro 404.
+
+Existem diversas configurações de 'fallbacks' que disparam a mensagem de erro 404 de diversas maneiras, olhe na documentação do Next.js na seção de 'fallbacks'.
 
 ## Typescript 
 
