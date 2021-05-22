@@ -178,7 +178,7 @@ Para criar uma rota de api simples, crie um arquivo em pages/api/index.js e escr
 
 Agora basta acessar /api/hello que irá retornar a resposta em um json.
 
-## Deploy
+## Deploy na versel
 
 Como o Next.js foi desenvolvido pela Versel, é recomendado hospedar aplicações com eles, para obter diversos benefícios de performance.
 
