@@ -142,6 +142,17 @@ Em Next.js, quando você exporta um componente de página, você também pode ex
 
 Essencialmente, o `getStaticProps` permite que você diga ao Next.js: "Ei, está pagina tem algumas dependências de dados - então, quando você pré-renderizar esta página no tempo de compilação, certifique-se de resolvê-los primeiro!".
 
+## Rotas dinamicas
+
+Next.js, permite gerar páginas estaticamente com caminhos que dependem de dados externos. Com as rotas dinâmicas, o Next.js gera automaticamente links para uma postagem específica por ex: /post/1 ou /post/bolo-de-chocolate.
+
+### Criando rotas dinamicas
+
+Primeiro, deveremos criar uma página chamada `[id].js` sob `pages/posts`. Páginas que começam com `[` e terminam com `]` são rotas dinâmicas em Next.js.
+
+Dentro de `pages/posts/[id.js]`, escreveremos o código que rendenizará uma página de postagem ou outras páginas que criarmos.
+
+
 ## Typescript 
 
 O Next.js possui suporte integrado a Typescript, para utilizar é necessário algumas configurações, vamos lá !
