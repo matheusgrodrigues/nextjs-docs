@@ -3,7 +3,8 @@
 $component: "c_post";
 
 .#{$component} {
-  width: 540px;
+  width: 100%;
+  max-width: 540px;
   height: auto;
   background-color: var(--light);
   @include centralizar;

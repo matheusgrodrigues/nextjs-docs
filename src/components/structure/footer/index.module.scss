@@ -1,3 +1,5 @@
+@import "src/styles/util/mixin/mixin";
+
 $layout: "lFooter";
 
 .#{$layout} {
@@ -10,6 +12,9 @@ $layout: "lFooter";
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: var(--espacamento_medio);
+  padding-right: var(--espacamento_medio);
+  line-height: lineHeight(16);
 
   & a {
     color: var(--azul);
