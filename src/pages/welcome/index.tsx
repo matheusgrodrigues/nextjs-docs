@@ -8,7 +8,12 @@ export default function Welcome() {
   return (
     <Main classe={styles.l_welcome}>
       <div className={styles.l_welcome__foto}>
-        <Image src="/images/profile.jpg" width={144} height={144} />
+        <Image
+          src="/images/profile.jpg"
+          width={144}
+          height={144}
+          alt="Foto de perfil"
+        />
       </div>
 
       <div className={styles.l_welcome__desc}>
@@ -19,7 +24,12 @@ export default function Welcome() {
 
         <div className={styles.l_welcome__desc_social}>
           <a href="https://github.com/MatheusGomesWeb" target="blank">
-            <Image src="/images/social/github.png" width={22} height={22} />
+            <Image
+              src="/images/social/github.png"
+              width={22}
+              height={22}
+              alt="Icone do github"
+            />
           </a>
         </div>
       </div>
