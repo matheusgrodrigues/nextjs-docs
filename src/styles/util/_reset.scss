@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,7 @@ body {
 body {
   font-size: var(--normal);
   background-color: var(--branco);
+  font-family: var(--montSerrat);
 }
 
 a {

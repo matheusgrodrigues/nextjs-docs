@@ -22,9 +22,10 @@ $component: "c_menu";
       & a {
         color: var(--branco);
         transition: 0.3s;
+        font-weight: var(--bold);
 
         &:hover {
-          color: var(--cinza);
+          color: var(--info);
           transition: 0.3s;
         }
       }
