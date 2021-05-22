@@ -23,6 +23,8 @@
   - [Criando rotas dinâmicas](#criando-rotas-dinamicas)
   - [Fallbacks de erro 404](#fallbacks-de-erros)
 - [Rotas API](#rotas-api)
+  - [Criando uma rota de api simples](#criando-uma-rota-de-api-simples)
+- [Deploy na versel](#deploy-na-versel)
 - [Typescript](#typescript)
 - [Conclusão](#conclusao)
 
