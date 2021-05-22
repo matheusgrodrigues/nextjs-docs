@@ -15,6 +15,7 @@ $layout: "lFooter";
   padding-left: var(--espacamento_medio);
   padding-right: var(--espacamento_medio);
   line-height: lineHeight(16);
+  text-align: center;
 
   & a {
     color: var(--azul);
