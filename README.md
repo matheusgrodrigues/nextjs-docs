@@ -11,10 +11,10 @@
 - [Css](#css)
 - [Sass](#sass)
 - [Pré-renderização e busca de dados](#pre-renderizacao-e-busca-de-dados)
- - [Geração estática](#geracao-estatica)
- - [Renderização do lado do servidor](#renderizacao-do-lado-do-servidor)
- - [Quando usar geração estática x renderização do lado do servidor](#quando-usar-geracao-estatica-x-renderizacao-do-lado-do-servidor)
- - [Geração estatica com getStaticProps](#geracao-estatica-com-getstaticprops)
+  - [Geração estática](#geracao-estatica)
+  - [Renderização do lado do servidor](#renderizacao-do-lado-do-servidor)
+  - [Quando usar geração estática x renderização do lado do servidor](#quando-usar-geracao-estatica-x-renderizacao-do-lado-do-servidor)
+  - [Geração estatica com getStaticProps](#geracao-estatica-com-getstaticprops)
 - [Typescript](#typescript)
 
 ## Sobre
