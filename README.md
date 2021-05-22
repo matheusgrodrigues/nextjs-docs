@@ -1,5 +1,11 @@
 # Leitura da documentação do Next.js
 
+![Pontuação final](readme/pontuacao.png)
+
+---
+
+## Sumário
+
 - [Sobre](#sobre)
 - [Configurar](#configurar)
   - [Criar um novo projeto](#criar-um-novo-projeto)
