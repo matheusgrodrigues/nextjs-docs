@@ -17,6 +17,7 @@
 
 **Next.js** é um framework da biblioteca ReactJS, a ideia por traz dele é facilitar o desenvolvimento de aplicativos que utilizam React. O Next.js fornece uma estrutura organizada de arquivos, pastas e configurações para facilitar o desenvolvimento de novos projetos, e facilitar o trabalho em equipe.
 
+
 O Next.js fornece configurações pré estabelecidadas, algumas delas são:
 
 - Sistema de roteamento dinâmico (baseado em páginas)
