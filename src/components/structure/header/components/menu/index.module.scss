@@ -1,6 +1,6 @@
-@import "/src/styles/util/mixin/mixin";
+@import "src/styles/util/mixin/mixin";
 
-$component: "tp_menu";
+$component: "c_menu";
 
 .#{$component} {
   width: 100%;

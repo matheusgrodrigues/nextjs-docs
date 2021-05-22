@@ -6,8 +6,8 @@ interface IMenu {
 
 export default function Menu({ children }: IMenu) {
   return (
-    <nav className={styles.tp_menu}>
-      <ul className={styles.tp_menu__list}>{children}</ul>
+    <nav className={styles.c_menu}>
+      <ul className={styles.c_menu__list}>{children}</ul>
     </nav>
   );
 }
