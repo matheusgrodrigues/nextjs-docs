@@ -17,6 +17,8 @@
   - [Geração estatica com getStaticProps](#geracao-estatica-com-getstaticprops)
 - [Rotas dinâmicas](#rotas-dinamicas)
   - [Criando rotas dinâmicas](#criando-rotas-dinamicas)
+  - [Fallbacks de erro 404](#fallbacks-de-erros)
+- [Rotas API](#rotas-api)
 - [Typescript](#typescript)
 
 ## Sobre
@@ -160,6 +162,25 @@ Dentro de `pages/posts/[id.js]`, escreveremos o código que rendenizará uma pá
 O next.js utiliza o arquivo /pages/404.js para mostrar mensagens de erro 404.
 
 Existem diversas configurações de 'fallbacks' que disparam a mensagem de erro 404 de diversas maneiras, olhe na documentação do Next.js na seção de 'fallbacks'.
+
+
+## Rotas API
+
+Next.js tem suporte para API Routes, que permite criar facilmente um endpoint de API como uma função sem servidor Node.js. 
+
+### Criando uma rota de api simples
+
+Para criar uma rota de api simples, crie um arquivo em pages/api/index.js e escreva o seguinte código:
+
+`export default function handler(req, res) {
+  res.status(200).json({ text: 'Hello' })
+}`
+
+Agora basta acessar /api/hello que irá retornar a resposta em um json.
+
+## Deploy
+
+Como o Next.js foi desenvolvido pela Versel, é recomendado hospedar aplicações com eles, para obter diversos benefícios de performance.
 
 ## Typescript 
 
