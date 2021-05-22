@@ -11,6 +11,10 @@
 - [Css](#css)
 - [Sass](#sass)
 - [Pré-renderização e busca de dados](#pre-renderizacao-e-busca-de-dados)
+ - [Geração estática](#geracao-estatica)
+ - [Renderização do lado do servidor](#renderizacao-do-lado-do-servidor)
+ - [Quando usar geração estática x renderização do lado do servidor](#quando-usar-geracao-estatica-x-renderizacao-do-lado-do-servidor)
+ - [Geração estatica com getStaticProps](#geracao-estatica-com-getstaticprops)
 - [Typescript](#typescript)
 
 ## Sobre
@@ -109,7 +113,7 @@ Com esse recurso, o next.js permite que o seu aplicativo seja renderizado sem Ja
 
 ### Formas de pre renderizacao
 
-#### Geração estatica
+#### Geracao estatica
 
 É o método de pré renderização, que gera o HTML no momento da construção. O HTML pré renderizado é então **reutilizado em cada soliticação**.
 
@@ -133,6 +137,8 @@ Em Next.js, quando você exporta um componente de página, você também pode ex
 
 - `getStaticProps` é executado em tempo de construção na produção
 - Dentro da função, você pode buscar os dados externos e enviá-los como adereços para a página.
+
+Essencialmente, o `getStaticProps` permite que você diga ao Next.js: "Ei, está pagina tem algumas dependências de dados - então, quando você pré-renderizar esta página no tempo de compilação, certifique-se de resolvê-los primeiro!".
 
 ## Typescript 
 
