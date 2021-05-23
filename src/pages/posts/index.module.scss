@@ -4,4 +4,21 @@ $layout: "l_posts";
   display: flex;
   flex-direction: column;
   gap: var(--espacamento_medio);
+
+  // Voltar
+  &__voltar {
+    text-align: right;
+    width: 62px;
+    height: 32px;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: auto;
+
+    & a {
+      color: var(--branco);
+    }
+  }
 }

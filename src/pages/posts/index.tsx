@@ -24,7 +24,7 @@ export default function Posts({ allPostsData }) {
       <Main classe={styles.l_posts}>
         {allPostsData.map(({ id, title, date, desc }) => {
           return (
-            <Post title={`${date} - ${title}`} key={id}>
+            <Post title={title} date={date} id={id} key={id}>
               {desc}
             </Post>
           );
