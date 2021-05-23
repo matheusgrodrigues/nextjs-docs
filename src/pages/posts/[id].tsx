@@ -1,4 +1,12 @@
-import DateFns from "src/components/lib/date-fns";
+import Link from "next/link";
+
+import Header from "src/components/structure/header";
+import Main from "src/components/structure/main";
+import Footer from "src/components/structure/footer";
+import Post from "src/components/structure/main/post";
+
+import styles from "./index.module.scss";
+
 import { getAllPostIds, getPostData } from "src/markdown";
 
 export async function getStaticPaths() {
@@ -20,15 +28,19 @@ export async function getStaticProps({ params }) {
 
 const PostDinamico = ({ postData }) => {
   return (
-    <div>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      <DateFns dateString={postData.date} />
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </div>
+    <>
+      <Header />
+      <Main classe={styles.l_posts}>
+        <Post title={postData.title} date={postData.date} id={postData.id}>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </Post>
+
+        <div className={styles.l_posts__voltar}>
+          <Link href="/posts">Voltar</Link>
+        </div>
+      </Main>
+      <Footer />
+    </>
   );
 };
 
