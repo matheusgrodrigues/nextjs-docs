@@ -2,6 +2,8 @@
 
 # Leitura da documentação do [Next.js](https://nextjs.org/)
 
+Ao longo desta breve leitura, foi proposto o desenvolvimento de um pequeno projeto de Blog, porém, para fixar os conhecimentos, eu resolvi criar a minha própria versão: [Next.js - Blog - MatheusGomes](https://nextjs-docs-rho-pink.vercel.app/)
+
 ## Sumário
 
 - [Sobre](#sobre)
